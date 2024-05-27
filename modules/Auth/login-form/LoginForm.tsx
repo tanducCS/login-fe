@@ -84,9 +84,9 @@ export default function LoginForm() {
                       </div>
                       <Input
                         required
-                        placeholder="Email"
+                        placeholder="Username"
                         {...field}
-                        className="ps-14 rounded-lg focus-visible:ring-0 focus-visible:ring-offset-0"
+                        className="ps-14 rounded-lg focus-visible:ring-0 focus-visible:ring-offset-0 h-12"
                       />
                     </div>
                   </FormControl>
@@ -115,7 +115,7 @@ export default function LoginForm() {
                         placeholder="Password"
                         required
                         type={showPassword ? "text" : "password"}
-                        className="ps-14 rounded-lg focus-visible:ring-0 focus-visible:ring-offset-0"
+                        className="ps-14 rounded-lg focus-visible:ring-0 focus-visible:ring-offset-0 h-12 "
                       />
                       <Button
                         type="button"
@@ -136,19 +136,10 @@ export default function LoginForm() {
                 </FormItem>
               )}
             />
-            {/* <div className="flex gap-5 mt">
-            <Checkbox id="save-password" className="border-primary-main data-[state=checked]:bg-primary-main"/>
-            <label
-              htmlFor="save-password"
-              className="leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-primary-main hover:cursor-pointer"
-            >
-              Save password
-            </label>
-            </div> */}
             <Button
               type="submit"
               variant="outline"
-              className="bg-primary-main text-white hover:bg-blue-700 hover:text-white"
+              className="bg-primary-main text-white hover:bg-primary-main/85 hover:text-white"
             >
               LOGIN
             </Button>
@@ -162,9 +153,6 @@ export default function LoginForm() {
             </div>
           </form>
         </Form>
-        {/* 
-          <Button variant="outlined" sx={{backgroundColor: '#264eca !important', color:'white' }}>Login</Button>
-           */}
       </div>
     </div>
   );

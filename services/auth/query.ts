@@ -14,11 +14,7 @@ export const useLogin = () => {
     onSuccess: (data) => {
       // Set user to queryClient
       queryClient.setQueryData(USER_KEY, data);
-      if (data.role === "admin") {
-        router.replace("/add-user");
-      } else {
-        router.replace("/upload-cv-jd");
-      }
+      router.push('/')
       toast({
         title: "Đăng nhập thành công",
         description: "Friday, February 10, 2023 at 5:57 PM",
