@@ -54,14 +54,14 @@ export default function LoginForm() {
   };
 
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center py-10">
       <div className="w-3/4 flex flex-col items-center gap-12">
         <Image
-          className="mt-16"
+          className="mt-10"
           alt="Logo"
-          src={"/images/auth/logo.svg"}
-          width={100}
-          height={100}
+          src={"/images/auth/logo.webp"}
+          width={200}
+          height={200}
         />
         <Form {...form}>
           <form
@@ -86,7 +86,7 @@ export default function LoginForm() {
                         required
                         placeholder="Email"
                         {...field}
-                        className="ps-14 rounded-lg focus:ring-2 focus:ring-blue-800"
+                        className="ps-14 rounded-lg focus-visible:ring-0 focus-visible:ring-offset-0"
                       />
                     </div>
                   </FormControl>
@@ -115,7 +115,7 @@ export default function LoginForm() {
                         placeholder="Password"
                         required
                         type={showPassword ? "text" : "password"}
-                        className="ps-14 rounded-lg focus:ring-2 focus:ring-blue-800"
+                        className="ps-14 rounded-lg focus-visible:ring-0 focus-visible:ring-offset-0"
                       />
                       <Button
                         type="button"
